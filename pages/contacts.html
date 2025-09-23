@@ -3,27 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="keywords"
-      content="marker, expo, erasable markers, dry-erase marker"
-    />
-    <meta
-      name="description"
-      content="Wright's very own original Expo mark store"
-    />
+    <metav      name="keywords"
+      content="marker, expo, erasable markers, dry-erase marker"    />
+    <meta       name="description"
+      content="Wright's very own original Expo mark store"    />
     <meta name="author" content="Bibek Raj Joshi" />
-    <link
-      rel="favicon"
+    <link       rel="favicon"
       href="../images/favicon-96x96.png"
-      type="image/x-icon"
-    />
+      type="image/x-icon"     />
+
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* h1{
+        color: burlywood;
+      } */
+    </style>
     <title>Contact Form</title>
   </head>
   <body>
-    <div>
+    <div class="container">
       <!-- div for banner of the website -->
       <div>
-        <h1>This is the banner area</h1>
+        <h1 id="banner">This is the banner area</h1>
       </div>
       <!-- start of navigation code block -->
       <div>
@@ -44,6 +45,7 @@
       </div>
       <!-- main area of the website -->
       <div>
+        <h1>This is an h1 element is contacts page</h1>
         <p>
           Lorem
           <b>ipsum dolor sit, amet consectetur adipisicing elit. Perferendis</b
@@ -55,37 +57,41 @@
         <p>constantly <sup>updates</sup> as i update the document</p>
 
         <table>
-            <form action="">
-                <tr>
-                    <th> First Name</th>
-                    <td> <input type="text" name="first_name" id=""></td>
-                </tr>
-                <tr>
-                    <th>Last Name</th>
-                    <td><input type="text" name="last_name" id=""></td>
-
-                </tr>
-                <tr>
-                    <th>Do you Like this class</th>
-                    <td> <input type="radio" name="class_likability" id="" value="YES"><label for="">Yes</label>
-                        <input type="radio" name="class_likability" id="" value="HELL_YES"><label for="">Hell Yes</label></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td colspan="2"><input type="submit" value="SEND IT">
-                     <input type="reset" value="CLEAR"></td>
-                </tr>
-            </form>
+          <form action="">
+            <tr>
+              <th>First Name</th>
+              <td><input type="text" name="first_name" id="" /></td>
+            </tr>
+            <tr>
+              <th>Last Name</th>
+              <td><input type="text" name="last_name" id="" /></td>
+            </tr>
+            <tr>
+              <th>Do you Like this class</th>
+              <td>
+                <input
+                  type="radio"
+                  name="class_likability"
+                  id=""
+                  value="YES"
+                /><label for="">Yes</label>
+                <input
+                  type="radio"
+                  name="class_likability"
+                  id=""
+                  value="HELL_YES"
+                /><label for="">Hell Yes</label>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td colspan="2">
+                <input type="submit" value="SEND IT" />
+                <input type="reset" value="CLEAR" />
+              </td>
+            </tr>
+          </form>
         </table>
-        
-          
-           
-           
-            
-           
-            
-           
-        
       </div>
 
       <!-- end of main area of website -->

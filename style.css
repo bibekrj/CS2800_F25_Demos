@@ -1,0 +1,44 @@
+
+
+ body {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     background-color: #E7E3C6;
+     /* color: white; */
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+     /* font-size: 20px; */
+     color: chartreuse;
+ }
+
+
+ #banner {
+     color: darkblue;
+ }
+
+ .container {
+     background-color: white;
+ }
+
+ .wrightStateGold {
+     color: #E7E3C6;
+ }
+
+ ul{
+    list-style-type: none;
+    
+ }
+
+ ul li{
+    display: inline;
+ }
+
+ a{
+    color: black;
+ }
