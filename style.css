@@ -7,7 +7,7 @@ body {
     /* color: white; */
 }
 
-.container{
+.container {
     margin: 0;
     padding: 0;
 }
@@ -31,12 +31,11 @@ body {
 
 /* ul li {
     /* display: inline; */
-/* } */ */
-
-.navbar ul li {
+/* } */
+*/ .navbar ul li {
     display: inline;
-      
-     
+
+
 }
 
 
@@ -45,12 +44,13 @@ body {
     text-decoration: none;
     background-color: #00482B;
     color: white;
-   
+
 }
 
-.navbar ul li a:hover{
+.navbar ul li a:hover {
     background-color: #AE8643;
 }
+
 .navbar ul {
     margin: 0px;
     padding: 20px;
@@ -59,11 +59,11 @@ body {
     /* text-align: center; */
     justify-content: center;
     list-style-type: none;
-  
-    
+
+
 }
 
-.navbar{
+.navbar {
     /* text-align: center; */
 }
 
@@ -72,53 +72,90 @@ a {
     /* text-decoration: none; */
 }
 
-.logo{
+.logo {
     background-color: #046A38;
-    color:white;
-    padding:5px;
+    color: white;
+    padding: 5px;
     text-align: center;
 }
 
-.mainArea{
+.mainArea {
     display: flex;
     padding: 10px;
 }
 
-.subNavBar{
+.subNavBar {
     flex: 20%;
     background-color: #719949;
 }
 
-.mainDisplayImage{
+.mainDisplayImage {
     flex: 60%;
     /* height: 400px; */
     /* align-content: center; */
-    
+
 }
-.mainDisplayImage img{
+
+.mainDisplayImage img {
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 
-.rightTextColumn{
+.rightTextColumn {
     flex: 20%;
 }
 
-.subNavBar ul li a{
+.subNavBar ul li a {
     text-decoration: none;
     color: white;
     display: block;
     /* margin:20px; */
 }
 
-.subNavBar ul{
+.subNavBar ul {
     list-style-type: none;
     margin: 0;
-    padding:0;
+    padding: 0;
     text-align: center;
 }
 
-.subNavBar ul li{
+.subNavBar ul li {
     padding: 10px;
+}
+
+.subArea {
+    display: flex;
+    padding: 20px;
+}
+
+
+.leftSubArea {
+    flex: 50%;
+}
+
+.rightSubArea {
+    flex: 50%;
+}
+
+.leftSubArea p{
+    text-align: justify;
+    padding: 5px;
+}
+
+.rightSubArea table th, td{
+    padding: 10px;
+}
+.rightSubArea table th{
+    background-color: #00482B;
+    color: #F2F1F0;
+}
+
+.rightSubArea table td{
+    background-color: #E7E3C6;
+    color: #AE8643;
+}
+
+.footer{
+    padding: 20px;
 }
