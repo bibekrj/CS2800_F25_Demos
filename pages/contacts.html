@@ -52,14 +52,14 @@
         <p>constantly <sup>updates</sup> as i update the document</p>
 
         <table>
-          <form action="">
+          <form action="" onsubmit="printName(); event.preventDefault()">
             <tr>
               <th>First Name</th>
-              <td><input type="text" name="first_name" id="" /></td>
+              <td><input type="text" name="first_name" id="firstName" /></td>
             </tr>
             <tr>
               <th>Last Name</th>
-              <td><input type="text" name="last_name" id="" /></td>
+              <td><input type="text" name="last_name" id="lastName" /></td>
             </tr>
             <tr>
               <th>Do you Like this class</th>
@@ -140,5 +140,7 @@
         <p>Copyright | CS 2800 Team</p>
       </div>
     </div>
+    <script src="../script.js"></script>
   </body>
+
 </html>
