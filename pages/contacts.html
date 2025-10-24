@@ -52,14 +52,15 @@
         <p>constantly <sup>updates</sup> as i update the document</p>
 
         <table>
-          <form action="" onsubmit="printName(); event.preventDefault()">
+          <form name="contactForm" onsubmit="printName(); event.preventDefault()">
+            
             <tr>
               <th>First Name</th>
-              <td><input type="text" name="first_name" id="firstName" /></td>
+              <td><input type="text" name="firstName" id="firstName" required /></td>
             </tr>
             <tr>
               <th>Last Name</th>
-              <td><input type="text" name="last_name" id="lastName" /></td>
+              <td><input type="text" name="lastName" id="lastName" /></td>
             </tr>
             <tr>
               <th>Do you Like this class</th>
@@ -86,6 +87,7 @@
               </td>
             </tr>
           </form>
+
         </table>
       </div>
 
@@ -94,14 +96,11 @@
       <!-- sub area below main-div -->
       <div>
         <div>
-          <h1>Heading item</h1>
+          <h1 id="colorChangeH1">Heading item</h1>
         </div>
         <div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Consequuntur eaque officia eligendi incidunt! Obcaecati, quos
-            officiis culpa excepturi porro aperiam illum quaerat, quibusdam,
-            fugit animi earum. Recusandae, sed? Amet, vel!
+          <p id="finalMessage">
+           
           </p>
         </div>
         <div>
@@ -134,6 +133,8 @@
             <td>9812734981723</td>
           </tr>
         </table> -->
+        <button onclick="timeStamp()">Purchase</button>
+        <button onclick="changeColor()">Change Color</button>
         </div>
       </div>
       <div>
@@ -141,6 +142,7 @@
       </div>
     </div>
     <script src="../script.js"></script>
+   
   </body>
 
 </html>
