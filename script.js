@@ -16,7 +16,7 @@ function printName(){
   //   alert("Hello " + first_name + " " + last_name);
   let firstName = document.forms["contactForm"]["firstName"].value;
   let lastName = document.forms["contactForm"]["lastName"].value;
-  if( lastName == ""){
+  if( lastName == "joshi"){
     alert("Hey You for to enter the last name");
   }
   else{
@@ -38,4 +38,19 @@ function changeColor(change){
   let heading = document.getElementById("colorChangeH1");
   heading.style.color="red";
 
+}
+
+function saveData(){
+  let name = document.getElementById("userName").value;
+  localStorage.setItem("user", name);
+  alert("saved");
+}
+
+document.getElementById("showBtn").onclick = function(){
+  let savedValue = localStorage.getItem("user");
+  if(savedValue == null){
+    savedValue = "No name saved";
+  }
+  document.getElementById("display").textContent=savedValue;
+  
 }

@@ -15,3 +15,6 @@ To used heading 2, we use two hashkeys(##).
 
 5. Bibek is now sorry.
 7. Adding from different branch
+
+<!-- ![My Image](/images/hero.jpg) -->
+<img src='/images/hero.jpg' width=500px;>
