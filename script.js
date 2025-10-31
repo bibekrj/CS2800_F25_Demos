@@ -37,6 +37,7 @@ function changeColor(change){
   // let change = true;
   let heading = document.getElementById("colorChangeH1");
   heading.style.color="red";
+  heading.style.fontStyle="italic ";
 
 }
 
@@ -53,4 +54,48 @@ document.getElementById("showBtn").onclick = function(){
   }
   document.getElementById("display").textContent=savedValue;
   
+}
+
+document.getElementById("saveData").onclick = function(){
+  let name = document.getElementById("name").value;
+  let color = document.getElementById("color").value;
+  let quantity = document.getElementById("quantity").value;
+  
+  let product_Data = {
+    product_name:name,
+    product_color:color,
+    product_quantity:quantity,
+    product_manufacture_date: document.getElementById("manufactureDate").value
+  }
+  localStorage.setItem("product_Data", JSON.stringify(product_Data));
+  alert("data stored");
+}
+
+
+document.getElementById("showData").onclick = function(){
+  let product_Data = JSON.parse(localStorage.getItem("product_Data"));
+  console.log(product_Data.product_name);
+  document.getElementById("product_name").innerHTML=product_Data.product_name;
+  document.getElementById("product_color").innerHTML=product_Data.product_color;
+  document.getElementById("product_quantity").innerHTML=product_Data.product_quantity;
+  document.getElementById("product_manufacture_date").innerHTML=product_Data.product_manufacture_date;
+}
+
+
+document.getElementById("saveMultipleData").onclick = function(){
+  let multiple_product_data = [
+    { product_name:"Pen",
+    product_color:"Brown",
+    product_quantity:"10",
+    product_manufacture_date: "2000"},
+    { product_name:"Pencil",
+    product_color:"Gray",
+    product_quantity:"10",
+    product_manufacture_date: "2000"},
+    { product_name:"Eraser",
+    product_color:"White",
+    product_quantity:"10",
+    product_manufacture_date: "2000"}
+  ];
+  localStorage.setItem("multiple_product_date", JSON.stringify(multiple_product_data));
 }
