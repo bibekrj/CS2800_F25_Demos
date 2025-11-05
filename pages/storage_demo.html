@@ -1,97 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="marker, expo, erasable markers, dry-erase marker" />
-    <meta name="description" content="Wright's very own original Expo mark store" />
-    <meta name="author" content="Bibek Raj Joshi" />
-    <link rel="shorcut icon" href="../images/favicon-96x96.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../style.css" />
-    <style>
-      /* h1{
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="marker, expo, erasable markers, dry-erase marker" />
+  <meta name="description" content="Wright's very own original Expo mark store" />
+  <meta name="author" content="Bibek Raj Joshi" />
+  <link rel="shorcut icon" href="../images/favicon-96x96.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* h1{
         color: burlywood;
       } */
-    </style>
-    <title>Contact Form</title>
-  </head>
-  <body>
-    <div class="container">
-      <!-- div for banner of the website -->
-      <div class="logo">
-        <h1>The Wright State Marker Store</h1>
-      </div>
-      <!-- start of navigation code block -->
-      <div class="navbar">
-        <ul>
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-          <li>
-            <a href="#Products">Products</a>
-          </li>
-          <li>
-            <a href="#">About us</a>
-          </li>
-          <li>
-            <a href="#Careers">Careers</a>
-          </li>
-        </ul>
-      </div>
-      <!-- main area of the website -->
-      <div>
-        <p>
+  </style>
+  <title>Contact Form</title>
+</head>
 
-       <input id = "userName" placeholder="Enter your name">
-        </p>
-       <button id="saveBtn" onclick="saveData()">Save</button>
-       <button id="showBtn">Show</button>
-       <p id="display"></p>
-        
+<body>
+  <div class="container">
+    <!-- div for banner of the website -->
+    <div class="logo">
+      <h1>The Wright State Marker Store</h1>
+    </div>
+    <!-- start of navigation code block -->
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li>
+          <a href="#Products">Products</a>
+        </li>
+        <li>
+          <a href="#">About us</a>
+        </li>
+        <li>
+          <a href="#Careers">Careers</a>
+        </li>
+      </ul>
+    </div>
+    <!-- main area of the website -->
+    <div>
+      <p>
+
+        <input id="userName" placeholder="Enter your name">
+      </p>
+      <button id="saveBtn" onclick="saveData()">Save</button>
+      <button id="showBtn">Show</button>
+      <p id="display"></p>
 
 
-        <input type="text" placeholder="Enter your Product Name" id="name">
-        <input type="text" placeholder="Enter the color" id="color">
-        <input type="text" placeholder="Enter the quantity" id="quantity">
-        <input type="text" placeholder="Enter the date of manufacture" id="manufactureDate">
-        <button id="saveData">Save Data</button>
+      <form action="" id="product_form">
+        <p>Product name <input type="text" placeholder="Enter your Product Name" id="name"></p>
+        <p>Product Color<input type="text" placeholder="Enter the color" id="color"></p>
+        <p>Product Quantity<input type="text" placeholder="Enter the quantity" id="quantity"></p>
+        <p>Date of Manufacture<input type="text" placeholder="Enter the date of manufacture" id="manufactureDate"></p>
+        <button type="submit">Add Product</button>
+      </form>
+      <!-- <button id="saveData">Save Data</button>
         <button id="showData">Show Data</button>
-        <button id="saveMultipleData">Save Multipple Data</button>
-        <table>
-          <tr>
-            <th>Product Name</th>
-            <td id="product_name"></td>
-          </tr>
-          <tr>
-            <th>Color</th>
-            <td id="product_color"></td>
-          </tr>
-          <tr>
-            <th>Quantity</th>
-            <td id="product_quantity"></td>
-          </tr>
-          <tr>
-            <th>Manufacture Date</th>
-            <td id="product_manufacture_date"></td>
-          </tr>
-        </table>
+        <button id="saveMultipleData">Save Multipple Data</button> -->
 
-      </div>
+      <button id="displayAllData">Display Data</button>
+      <table>
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Color</th>
+              <th>Quantity</th>
+              <th>Manufacture Date</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
 
-      <!-- end of main area of website -->
+          </tbody>
+      </table>
 
-      <!-- sub area below main-div -->
+    </div>
+
+    <!-- end of main area of website -->
+
+    <!-- sub area below main-div -->
+    <div>
       <div>
-        <div>
-          <h1 id="colorChangeH1">Heading item</h1>
-        </div>
-        <div>
-          <p id="finalMessage">
-           
-          </p>
-        </div>
-        <div>
-          <!-- <table>
+        <h1 id="colorChangeH1">Heading item</h1>
+      </div>
+      <div>
+        <p id="finalMessage">
+
+        </p>
+      </div>
+      <div>
+        <!-- <table>
           <tr>
             <th>First Name</th>
             <th>last name</th>
@@ -122,14 +123,14 @@
         </table> -->
         <button onclick="timeStamp()">Purchase</button>
         <button onclick="changeColor()">Change Color</button>
-        </div>
-      </div>
-      <div>
-        <p>Copyright | CS 2800 Team</p>
       </div>
     </div>
-    <script src="../script.js"></script>
-   
-  </body>
+    <div>
+      <p>Copyright | CS 2800 Team</p>
+    </div>
+  </div>
+  <script src="../script.js"></script>
+
+</body>
 
 </html>
